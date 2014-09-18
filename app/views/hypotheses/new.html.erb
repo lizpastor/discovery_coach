@@ -1,9 +1,31 @@
-<div class="row">
-	<div class="col-md-6 col-md-offset-3">
-		<h1>Create Your Hypothesis</h1>
 
-		<%= render 'form' %>
 
-		<%= link_to 'Back', hypotheses_path %>
-	</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-l-6">
+			<h1>Create Your Hypothesis</h1>
+
+			<%= render 'form' %>
+
+			<%= link_to 'Back', hypotheses_path %>
+ 		</div>
+
+		<div class="col-md-6 col-l-6"> 
+    		<h1>Help from the Coach</h1>
+
+    		<%=image_tag("good1.png",:alt=>"Responsive image") %>
+       
+       		<p>Examples</p>
+
+       		<%=image_tag("good2.png",:alt=>"Responsive image") %>
+      		 <p>Reducing the sign up steps from 3 to 1 will increase sign ups for all new sign ups
+	  		 by 25% after 1,000 sign ups.</p>
+       
+            <h4>Give it a shot! </h4>
+        </div>
+    
+
+    </div>
+
 </div>
+
