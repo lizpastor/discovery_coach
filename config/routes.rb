@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'how_to/index'
-
+  
+  devise_for :users
   resources :hypotheses
 
+  get 'how_to/index'
   get 'welcome/index'
 
   root 'welcome#index'
-
   get 'how_to' => "how_to#index"
+  
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
