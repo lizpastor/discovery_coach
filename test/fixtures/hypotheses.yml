@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2014-09-18
+  name: MyString
+  change: MyText
+  impact: MyText
+  who: MyText
+  how_much: MyString
+  how_long: MyString
+
+two:
+  date: 2014-09-18
+  name: MyString
+  change: MyText
+  impact: MyText
+  who: MyText
+  how_much: MyString
+  how_long: MyString

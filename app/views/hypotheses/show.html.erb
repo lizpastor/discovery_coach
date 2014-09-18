@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @hypothesis.date %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hypothesis.name %>
+</p>
+
+<p>
+  <strong>Change:</strong>
+  <%= @hypothesis.change %>
+</p>
+
+<p>
+  <strong>Impact:</strong>
+  <%= @hypothesis.impact %>
+</p>
+
+<p>
+  <strong>Who:</strong>
+  <%= @hypothesis.who %>
+</p>
+
+<p>
+  <strong>How much:</strong>
+  <%= @hypothesis.how_much %>
+</p>
+
+<p>
+  <strong>How long:</strong>
+  <%= @hypothesis.how_long %>
+</p>
+
+<%= link_to 'Edit', edit_hypothesis_path(@hypothesis) %> |
+<%= link_to 'Back', hypotheses_path %>
