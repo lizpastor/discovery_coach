@@ -1,4 +1,5 @@
 class HypothesesController < ApplicationController
+     before_action :authenticate_user!
   before_action :set_hypothesis, only: [:show, :edit, :update, :destroy]
 
   # GET /hypotheses
