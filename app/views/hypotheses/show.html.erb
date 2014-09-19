@@ -1,39 +1,23 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <strong>Date:</strong>
-  <%= @hypothesis.date %>
-</p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @hypothesis.name %>
-</p>
+<h1>BooYah <%= @hypothesis.name %>!  You just made yourself a hypothesis!!! </h1>
+<h3>Here it is:</h3>
 
-<p>
-  <strong>Change:</strong>
+<p><h3>
+ 
   <%= @hypothesis.change %>
-</p>
 
-<p>
-  <strong>Impact:</strong>
   <%= @hypothesis.impact %>
-</p>
 
-<p>
-  <strong>Who:</strong>
   <%= @hypothesis.who %>
-</p>
 
-<p>
-  <strong>How much:</strong>
   <%= @hypothesis.how_much %>
-</p>
 
-<p>
-  <strong>How long:</strong>
   <%= @hypothesis.how_long %>
-</p>
+</h3></p>
 
+</br>
+</br>
 <%= link_to 'Edit', edit_hypothesis_path(@hypothesis) %> |
 <%= link_to 'View All Hypotheses', hypotheses_path %>
