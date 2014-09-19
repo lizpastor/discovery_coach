@@ -1,24 +1,27 @@
-<h1>Listing hypotheses</h1>
+<div>
+  <h1>Careerbuilder Hypotheses</h1>
           
+     <%= link_to 'Add a Hypothesis', new_hypothesis_path %>
+</div>
+
 <% @hypotheses.each do |hypothesis| %>
 
 <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      
-      <h1><%= hypothesis.name %></h1>
-      <h4><%= hypothesis.date %></h4>
-     <p> <%= hypothesis.change %>
+    <h4><%= hypothesis.name %></h4>
+    <h6><%= hypothesis.date %></h6>
+    <p><%= hypothesis.change %>
       <%= hypothesis.impact %>
       <%= hypothesis.who %>
       <%= hypothesis.how_much %>
       <%= hypothesis.how_long %></p>
-      <%= link_to 'Show', hypothesis %>
-      <%= link_to 'Edit', edit_hypothesis_path(hypothesis) %>
-       <%= link_to 'Destroy', hypothesis, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Show |', hypothesis %>
+      <%= link_to 'Edit |', edit_hypothesis_path(hypothesis) %>
+      <%= link_to 'Delete', hypothesis, method: :delete, data: { confirm: 'Are you sure?' } %>
     </div>
 </div>
 <% end %>
 
-<br>
 
-<%= link_to 'New Hypothesis', new_hypothesis_path %>
+
+
